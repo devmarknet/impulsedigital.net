@@ -19,5 +19,6 @@ export default Vue.extend({
     <WebsitesDevelopment />
     <Jobs />
     <Integration />
+    <Enterprise />
   </main>
 </template>

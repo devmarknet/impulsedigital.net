@@ -6,3 +6,7 @@ html,
 body {
   @apply bg-[#08031A];
 }
+
+.container {
+  @apply max-w-[1488px] mx-auto;
+}

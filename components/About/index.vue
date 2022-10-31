@@ -14,7 +14,7 @@ export default Vue.extend({
   props: {
     data: {
       type: Object,
-      required: true,
+      // required: true,
     } as PropOptions<AboutData>,
   },
 })
