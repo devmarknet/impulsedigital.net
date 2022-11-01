@@ -13,7 +13,7 @@ export default Vue.extend({
 <template>
   <main class="flex flex-col">
     <Navbar />
-    <Header :data="header" class="py-32" />
+    <Header :data="header" class="pt-16 pb-32" />
     <About class="py-32" />
     <Services class="py-32" />
     <Inovation class="pt-64 pb-32" />
@@ -21,6 +21,7 @@ export default Vue.extend({
     <Jobs class="pt-24 pb-32" />
     <Integration class="py-32" />
     <Enterprise class="py-32" />
+    <Form />
   </main>
 </template>
 
