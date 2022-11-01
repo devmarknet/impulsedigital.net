@@ -11,14 +11,14 @@ export default Vue.extend({
 </script>
 
 <template>
-  <main class="flex flex-col gap-64">
-    <Header :data="header" />
-    <About />
-    <Services />
-    <Inovation />
-    <WebsitesDevelopment />
-    <Jobs />
-    <Integration />
-    <Enterprise />
+  <main class="flex flex-col">
+    <Header :data="header" class="py-32" />
+    <About class="py-32" />
+    <Services class="py-32" />
+    <Inovation class="pt-64 pb-32" />
+    <WebsitesDevelopment class="pt-32 pb-2" />
+    <Jobs class="pt-24 pb-32" />
+    <Integration class="py-32" />
+    <Enterprise class="py-32" />
   </main>
 </template>
