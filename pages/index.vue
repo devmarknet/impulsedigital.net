@@ -12,6 +12,7 @@ export default Vue.extend({
 
 <template>
   <main class="flex flex-col">
+    <Navbar />
     <Header :data="header" class="py-32" />
     <About class="py-32" />
     <Services class="py-32" />
@@ -22,3 +23,9 @@ export default Vue.extend({
     <Enterprise class="py-32" />
   </main>
 </template>
+
+<style>
+body {
+  background: url('../assets/images/bg-splash.png');
+}
+</style>
