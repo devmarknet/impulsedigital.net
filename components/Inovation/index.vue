@@ -6,26 +6,24 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div>
-    <div class="content p-6">
-      <img
-        :src="require('~/assets/svg/rocket-inovation.jpeg')"
-        alt="Rocket Inovation Image"
-      />
-      <div class="text-white flex flex-col gap-5">
-        <h2 class="font-title text-3xl uppercase">
-          Inovação para atender a necessidade da sua empresa
-        </h2>
-        <p class="text-xl font-light">
-          Conosco você terá soluções completas e inovadoras para a sua empresa
-          subir de nível
-        </p>
-        <a
-          class="bg-[#F2632D] text-white py-4 px-10 w-max rounded-full uppercase text-sm"
-          href="#action"
-          >Contate-nos</a
-        >
-      </div>
+  <div class="container mx-auto flex items-center p-6 -mt-56 gap-12">
+    <img
+      :src="require('~/assets/images/rocket-inovation.png')"
+      alt="Rocket Inovation Image"
+    />
+    <div class="text-white flex flex-col gap-8">
+      <h2 class="title max-w-[550px]">
+        Inovação para atender a necessidade da sua empresa
+      </h2>
+      <p class="text-cover max-w-[588px]">
+        Conosco você terá soluções completas e inovadoras para a sua empresa
+        subir de nível
+      </p>
+      <a
+        class="bg-[#F2632D] text-white py-4 px-10 w-max rounded-full uppercase text-sm"
+        href="#action"
+        >Contate-nos</a
+      >
     </div>
   </div>
 </template>

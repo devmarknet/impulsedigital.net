@@ -21,21 +21,18 @@ export default Vue.extend({
 </script>
 
 <template>
-  <header
+  <!-- <header
     class="flex items-center justify-center h-screen"
     :style="`background: url(${require('~/assets/images/header-bg.png')})`"
-  >
-    <div class="container mx-auto">
+  > -->
+  <header class="flex items-center justify-center">
+    <div class="container mx-auto px-6">
       <div class="flex items-center justify-between w-full relative">
         <div class="flex flex-col gap-8">
-          <h1
-            class="text-white font-title font-bold uppercase text-[60px] leading-[72px] max-w-[848px]"
-          >
+          <h1 class="title max-w-[848px]">
             {{ data.title }}
           </h1>
-          <p
-            class="text-white/70 font-light text-[38px] leading-[48px] max-w-[720px]"
-          >
+          <p class="text-cover max-w-[720px]">
             {{ data.body }}
           </p>
           <a

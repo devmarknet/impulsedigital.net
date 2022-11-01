@@ -10,3 +10,11 @@ body {
 .container {
   @apply max-w-[1488px] mx-auto;
 }
+
+.title {
+  @apply text-white font-title font-semibold uppercase text-[60px] leading-[72px];
+}
+
+.text-cover {
+  @apply text-white/70 font-thin text-[38px] leading-[48px];
+}

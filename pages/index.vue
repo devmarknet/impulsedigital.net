@@ -11,7 +11,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <main>
+  <main class="flex flex-col gap-64">
     <Header :data="header" />
     <About />
     <Services />
