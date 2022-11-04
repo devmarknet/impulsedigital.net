@@ -2,6 +2,29 @@
 import Vue from 'vue'
 export default Vue.extend({
   name: 'WebsitesDevelopment',
+  data() {
+    return {
+      items: [
+        {
+          symbol: 'sites-responsivos.svg',
+          title: 'Sites Responsivos',
+        },
+        {
+          symbol: 'layout-personalizado.svg',
+          title: 'Layout Personalizado',
+        },
+        {
+          symbol: 'sites-otimizados.svg',
+          title: 'Sites Otimizados e Gerenciáveis',
+        },
+        {
+          symbol: 'analytics.svg',
+          title:
+            'Integração com Google Analytics e com ferramentas de email marketing',
+        },
+      ],
+    }
+  },
 })
 </script>
 
@@ -27,11 +50,13 @@ export default Vue.extend({
         </p>
       </div>
       <ul class="text-white font-light flex flex-col gap-6">
-        <li class="text-2xl">Sites responsivos</li>
-        <li class="text-2xl">Layout Personalizado</li>
-        <li class="text-2xl">Sites otimizados e gerenciáveis</li>
-        <li class="text-2xl max-w-[446px]">
-          Integração com Google Analytics e com ferramentas de email marketing
+        <li
+          v-for="i in items"
+          :key="items.indexOf(i)"
+          class="text-2xl flex items-center gap-6 max-w-[510px]"
+        >
+          <img :src="require(`~/assets/svg/${i.symbol}`)" :alt="i.title" />
+          <p>{{ i.title }}</p>
         </li>
       </ul>
     </div>
