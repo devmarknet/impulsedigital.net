@@ -27,7 +27,7 @@ export default Vue.extend({
         </li>
       </ul>
       <a
-        href="#phone"
+        href="tel:044991192677"
         class="w-52 text-white bg-[#F2632D] text-center py-4 rounded-full flex items-center gap-4 justify-center"
       >
         <svg
@@ -44,7 +44,7 @@ export default Vue.extend({
             fill="#D9D9D9"
           />
         </svg>
-        (44) 9 9999-0099</a
+        (44) 9 9119-2677</a
       >
     </div>
   </nav>
