@@ -21,7 +21,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div>
+  <div id="a-impulse">
     <div class="container mx-auto px-6 flex items-center justify-between flex-col lg:flex-row">
       <div class="flex flex-col gap-8">
         <img

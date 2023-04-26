@@ -2,40 +2,53 @@
 import Vue from 'vue'
 export default Vue.extend({
   name: 'NavbarComponent',
+  data(){
+    return{
+      navActived: false
+    }
+  },
 })
 </script>
 
 <template>
   <nav>
-     <div class="container mx-auto px-6 pt-28 flex justify-between items-center">
-      <div class="navbar-burguer">
-        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 1C0.25 0.585786 0.585786 0.25 1 0.25H17C17.4142 0.25 17.75 0.585786 17.75 1C17.75 1.41421 17.4142 1.75 17 1.75H1C0.585786 1.75 0.25 1.41421 0.25 1ZM0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H17C17.4142 6.25 17.75 6.58579 17.75 7C17.75 7.41421 17.4142 7.75 17 7.75H1C0.585786 7.75 0.25 7.41421 0.25 7ZM0.25 13C0.25 12.5858 0.585786 12.25 1 12.25H17C17.4142 12.25 17.75 12.5858 17.75 13C17.75 13.4142 17.4142 13.75 17 13.75H1C0.585786 13.75 0.25 13.4142 0.25 13Z" fill="white"/>
-        </svg>
+     <div class="relative container mx-auto px-6 pt-28 flex justify-between items-center">
+      <div class="flex items-center justify-start gap-5">
+        <button class="flex lg:hidden w-5 h-5 items-center justify-center" @click="navActived = !navActived">
+          <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 1C0.25 0.585786 0.585786 0.25 1 0.25H17C17.4142 0.25 17.75 0.585786 17.75 1C17.75 1.41421 17.4142 1.75 17 1.75H1C0.585786 1.75 0.25 1.41421 0.25 1ZM0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H17C17.4142 6.25 17.75 6.58579 17.75 7C17.75 7.41421 17.4142 7.75 17 7.75H1C0.585786 7.75 0.25 7.41421 0.25 7ZM0.25 13C0.25 12.5858 0.585786 12.25 1 12.25H17C17.4142 12.25 17.75 12.5858 17.75 13C17.75 13.4142 17.4142 13.75 17 13.75H1C0.585786 13.75 0.25 13.4142 0.25 13Z" fill="white"/>
+          </svg>
+        </button>
 
-
+        <a href="/"> <img :src="require('~/assets/images/logo.png')" alt="" /></a>
       </div>
-      <a href="/"> <img :src="require('~/assets/images/logo.png')" alt="" /></a>
-      <ul class="text-white/50 flex gap-14 text-sm uppercase">
+
+      <ul :class="
+        `lg:text-white/50 lg:relative lg:w-auto lg:max-w-none flex lg:flex-row gap-7 xl:gap-14 text-sm lg:bg-transparent lg:rounded-none lg:shadow-none uppercase lg:opacity-100 lg:pointer-events-auto
+        text-black/50 absolute z-10 w-full max-w-xs flex-col top-[calc(100%+16px)] left-7 sm:max-w-sm p-5 bg-white rounded-md shadow-md
+        ${ navActived ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }
+        `
+        ">
         <li>
-          <a href="#inicio">Início</a>
+          <a href="/#inicio">Início</a>
         </li>
         <li>
-          <a href="#a-impulse">A Impulse</a>
+          <a href="/#a-impulse">A Impulse</a>
         </li>
         <li>
-          <a href="#servicos">Serviços</a>
+          <a href="/#servicos">Serviços</a>
         </li>
         <li>
-          <a href="#nosso-trabalho">Nosso Trabalho</a>
+          <a href="/#nosso-trabalho">Nosso Trabalho</a>
         </li>
         <li>
-          <a href="#beneficios">Benefícios</a>
+          <a href="/#beneficios">Benefícios</a>
         </li>
       </ul>
+
       <a
         href="tel:044991192677"
-        class="w-52 text-white bg-[#F2632D] text-center py-4 rounded-full flex items-center gap-4 justify-center"
+        class="w-52 text-white bg-[#F2632D] text-center py-4 rounded-full hidden sm:flex items-center gap-4 justify-center self-end"
       >
         <svg
           width="24"

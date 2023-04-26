@@ -28,7 +28,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="container mx-auto p-6 flex justify-center items-center flex-col lg:flex-row">
+  <div id="nosso-trabalho" class="container mx-auto p-6 flex justify-center items-center flex-col lg:flex-row">
     <img class="hidden lg:block" :src="require('~/assets/images/jobs.png')" />
     <div class="xl:pt-32">
       <div class="content p-6 pt-12">

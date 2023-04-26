@@ -21,7 +21,7 @@ export default Vue.extend({
       </p>
       <a
         class="bg-[#F2632D] text-white py-4 px-10 w-max rounded-full uppercase text-sm"
-        href="#action"
+        href="/#contact"
         >Contate-nos</a
       >
     </div>

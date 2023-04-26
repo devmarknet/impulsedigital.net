@@ -42,7 +42,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="container flex items-center justify-between mx-auto p-6 flex-col xl:flex-row ">
+  <div id="beneficios" class="container flex items-center justify-between mx-auto p-6 flex-col xl:flex-row ">
     <div>
       <div class="content">
         <h2 class="title max-w-[600px]">

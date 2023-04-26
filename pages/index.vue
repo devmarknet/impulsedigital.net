@@ -11,7 +11,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <main class="flex flex-col">
+  <main class="overflow-hidden flex flex-col">
     <Navbar />
     <Header :data="header" class="pt-16 pb-32" />
     <About class="py-32" />

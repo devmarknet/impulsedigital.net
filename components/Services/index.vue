@@ -42,7 +42,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="flex flex-col gap-8">
+  <div id="servicos" class="flex flex-col gap-8">
     <div class="container text-white p-6 text-center">
       <span class="uppercase opacity-50">Serviços</span>
       <h2 class="title my-5">Diagnóstico para o seu negócio</h2>

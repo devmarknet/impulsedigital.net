@@ -7,6 +7,7 @@ export default Vue.extend({
 
 <template>
   <div
+    id="contact"
     class="flex flex-col w-full pb-32 pt-16"
     :style="`background: url(${require('~/assets/images/form-bg.png')})`"
   >
