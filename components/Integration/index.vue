@@ -26,7 +26,7 @@ export default Vue.extend({
 <template>
   <div class="container mx-auto p-6 text-center">
     <h2 class="title max-w-[502px] mx-auto">Integração entre os 03 pilares</h2>
-    <ul class="flex px-24 my-12 relative">
+    <ul class="flex flex-col sm:flex-row px-9 lg:px-24 my-12 relative">
       <li
         v-for="i in items"
         :key="i"
@@ -42,10 +42,10 @@ export default Vue.extend({
           </h3>
         </div>
       </li>
-      <div class="absolute w-1/2 h-full box-animated block rounded-lg"></div>
+      <div class="absolute w-1/2 h-full box-animated hidden sm:block rounded-lg "></div>
     </ul>
     <p
-      class="text-[28px] leading-[38px] text-white mx-auto text-extralight max-w-[850px]"
+      class="text-[28px] leading-[38px] text-white mx-auto text-extralight lg:max-w-[850px]"
     >
       A integração desses tres setores, aplicada de forma personalizada e
       estratégica de acordo com seu negócio, garante que os resultados sejam

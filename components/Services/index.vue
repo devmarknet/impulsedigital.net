@@ -48,8 +48,8 @@ export default Vue.extend({
       <h2 class="title my-5">Diagnóstico para o seu negócio</h2>
       <p class="text-cover">O passo a passo em busca de resultados</p>
     </div>
-    <div class="container flex justify-center">
-      <ul class="grid grid-cols-3 p-6 gap-20">
+    <div class="container flex justify-center ">
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-6 gap-20 ">
         <li
           class="flex flex-col gap-5 max-w-[426px]"
           v-for="i in items"

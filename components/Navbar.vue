@@ -7,7 +7,14 @@ export default Vue.extend({
 
 <template>
   <nav>
-    <div class="container mx-auto px-6 pt-28 flex justify-between items-center">
+     <div class="container mx-auto px-6 pt-28 flex justify-between items-center">
+      <div class="navbar-burguer">
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 1C0.25 0.585786 0.585786 0.25 1 0.25H17C17.4142 0.25 17.75 0.585786 17.75 1C17.75 1.41421 17.4142 1.75 17 1.75H1C0.585786 1.75 0.25 1.41421 0.25 1ZM0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H17C17.4142 6.25 17.75 6.58579 17.75 7C17.75 7.41421 17.4142 7.75 17 7.75H1C0.585786 7.75 0.25 7.41421 0.25 7ZM0.25 13C0.25 12.5858 0.585786 12.25 1 12.25H17C17.4142 12.25 17.75 12.5858 17.75 13C17.75 13.4142 17.4142 13.75 17 13.75H1C0.585786 13.75 0.25 13.4142 0.25 13Z" fill="white"/>
+        </svg>
+
+
+      </div>
       <a href="/"> <img :src="require('~/assets/images/logo.png')" alt="" /></a>
       <ul class="text-white/50 flex gap-14 text-sm uppercase">
         <li>

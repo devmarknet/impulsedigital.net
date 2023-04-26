@@ -22,7 +22,7 @@ export default Vue.extend({
 
 <template>
   <div>
-    <div class="container mx-auto px-6 flex items-center justify-between">
+    <div class="container mx-auto px-6 flex items-center justify-between flex-col lg:flex-row">
       <div class="flex flex-col gap-8">
         <img
           class="w-20 xl:w-44"
@@ -36,8 +36,8 @@ export default Vue.extend({
           As melhores soluções pensadas para o seu negócio
         </p>
       </div>
-      <ul class="flex flex-col xl:flex-row gap-24 text-white p-6 max-w-[856px]">
-        <li>
+      <ul class="flex flex-wrap flex-row justify-center gap-24 text-white p-6 max-w-[917px]">
+        <li class="w-full lg:w-auto">
           <svg
             width="64"
             height="64"
@@ -73,7 +73,7 @@ export default Vue.extend({
             </span>
           </h3>
           <p
-            class="font-light text-white/50 mt-8 leading-[26px] w-[220px] max-w-[220px]"
+            class="font-light text-white/50 mt-8 leading-[26px] lg:w-[220px] lg:max-w-[220px]"
           >
             Para você que precisa gerar mais tráfego para o seu negócio local,
             captar mais leads qualificados e fortalecer o posicionamento da sua
@@ -117,7 +117,7 @@ export default Vue.extend({
             </span>
           </h3>
           <p
-            class="font-light text-white/50 leading-[26px] w-[220px] max-w-[220px]"
+            class="font-light text-white/50 leading-[26px] lg:w-[220px] lg:max-w-[220px]"
           >
             Para marcas que buscam uma estratégia em busca de resultados através
             de soluções inovadoras. Conquiste definitivamente sua autoridade no
@@ -157,7 +157,7 @@ export default Vue.extend({
             <span class="text-[#F2632D]"> Ecommerces </span>
           </h3>
           <p
-            class="font-light text-white/50 leading-[26px] w-[220px] max-w-[220px]"
+            class="font-light text-white/50 leading-[26px] lg:w-[220px] lg:max-w-[220px]"
           >
             Para você que precisa desenvolver uma loja virtual, gerar mais
             tráfego e ampliar suas vendas no ambiente virtual.

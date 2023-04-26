@@ -6,7 +6,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="container mx-auto flex items-center p-6 -mt-56 gap-12">
+  <div class="container mx-auto flex items-center p-6 -mt-56 gap-12 flex-col xl:flex-row ">
     <img
       :src="require('~/assets/images/rocket-inovation.png')"
       alt="Rocket Inovation Image"

@@ -31,7 +31,7 @@ export default Vue.extend({
 <template>
   <div
     class="pt-40"
-    :style="`background: url(${require('~/assets/images/development-bg.png')})`"
+    :style="`background: url(${require('~/assets/images/development-bg.png')}); background-repeat:no-repeat;`"
   >
     <!-- <video :src="require('~/assets/movie/development.mov')"></video> -->
     <div

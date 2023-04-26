@@ -42,25 +42,25 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="container flex items-center justify-between mx-auto p-6">
+  <div class="container flex items-center justify-between mx-auto p-6 flex-col xl:flex-row ">
     <div>
       <div class="content">
         <h2 class="title max-w-[600px]">
           Sua empresa no caminho do crescimento
         </h2>
-        <p class="text-white text-3xl font-extralight mt-6 max-w-[520px]">
+        <p class="text-white text-3xl font-extralight mt-6 lg:max-w-[520px]">
           Uma estratégia de marketing completa focada em branding e resultados
         </p>
       </div>
-      <ul class="text-white mt-12 flex flex-wrap gap-10 max-w-[788px]">
-        <li v-for="i in items" :key="i" class="xl:w-[360px] max-w-[360px]">
+      <ul class="text-white mt-12 flex flex-wrap gap-10 lg:max-w-[788px]">
+        <li v-for="i in items" :key="i" class="xl:w-[360px] lg:max-w-[360px]">
           <h3 class="text-3xl font-title font-extralight flex gap-4 uppercase">
             <img :src="require(`~/assets/svg/${i.symbol}`)" :alt="i.title" />
 
             {{ i.title }}
           </h3>
           <p
-            class="text-white/50 mt-6 leading-[26px] font-extralight max-w-[302px] pl-14"
+            class="text-white/50 mt-6 leading-[26px] font-extralight lg:max-w-[302px] pl-14"
           >
             {{ i.text }}
           </p>

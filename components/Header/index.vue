@@ -27,7 +27,7 @@ export default Vue.extend({
   > -->
   <header class="flex items-center justify-center">
     <div class="container mx-auto px-6">
-      <div class="flex items-center justify-between w-full relative">
+      <div class="flex items-center justify-between w-full relative flex-col md:flex-row">
         <div class="flex flex-col gap-8">
           <h1 class="title max-w-[848px]">
             {{ data.title }}

@@ -7,10 +7,10 @@ export default Vue.extend({
 
 <template>
   <div
-    class="pb-32 pt-16"
+    class="flex flex-col w-full pb-32 pt-16"
     :style="`background: url(${require('~/assets/images/form-bg.png')})`"
   >
-    <div class="container mx-auto p-6 flex items-center justify-between">
+    <div class="container w-full mx-auto p-6 gap-6 xl:gap-0 flex items-center justify-between flex-col xl:flex-row">
       <div>
         <h2 class="title">Contate-nos</h2>
         <p
@@ -31,75 +31,75 @@ export default Vue.extend({
           <li>Equipe qualificada a serviço do seu negócio</li>
         </ul>
       </div>
-      <div>
-        <form class="flex flex-col gap-5">
-          <label class="relative" for="">
+      <div class="flex flex-col w-full max-w-[570px]">
+        <form class="flex flex-col w-full gap-5">
+          <label class="relative w-full" for="">
             <span class="absolute py-2 px-4 text-xs text-gray-400 font-medium"
               >Email</span
             >
             <input
               type="text"
-              class="pt-6 pb-3 px-4 w-[570px] rounded-md"
+              class="pt-6 pb-3 px-4 w-full max-w-[570px] rounded-md"
               placeholder="Seu melhor email"
             />
           </label>
-          <label class="relative" for="">
+          <label class="relative w-full" for="">
             <span class="absolute py-2 px-4 text-xs text-gray-400 font-medium"
               >Seu nome</span
             >
             <input
               type="text"
-              class="pt-6 pb-3 px-4 w-[570px] rounded-md"
+              class="pt-6 pb-3 px-4 w-full max-w-[570px] rounded-md"
               placeholder="Seu nome completo"
             />
           </label>
-          <label class="relative" for="">
+          <label class="relative w-full" for="">
             <span class="absolute py-2 px-4 text-xs text-gray-400 font-medium"
               >Nome da empresa</span
             >
             <input
               type="text"
-              class="pt-6 pb-3 px-4 w-[570px] rounded-md"
+              class="pt-6 pb-3 px-4 w-full max-w-[570px] rounded-md"
               placeholder="Qual o nome da sua empresa?"
             />
           </label>
-          <label class="relative" for="">
+          <label class="relative w-full" for="">
             <span class="absolute py-2 px-4 text-xs text-gray-400 font-medium"
               >Instagram da empresa</span
             >
             <input
               type="text"
-              class="pt-6 pb-3 px-4 w-[570px] rounded-md"
+              class="pt-6 pb-3 px-4 w-full max-w-[570px] rounded-md"
               placeholder="Informe o @perfil de sua empresa"
             />
           </label>
-          <label class="relative" for="">
+          <label class="relative w-full" for="">
             <span class="absolute py-2 px-4 text-xs text-gray-400 font-medium"
               >Qual o ramo do seu negócio</span
             >
             <input
               type="text"
-              class="pt-6 pb-3 px-4 w-[570px] rounded-md"
+              class="pt-6 pb-3 px-4 w-full max-w-[570px] rounded-md"
               placeholder="Em que àrea sua empresa atua?"
             />
           </label>
-          <label class="relative" for="">
+          <label class="relative w-full" for="">
             <span class="absolute py-2 px-4 text-xs text-gray-400 font-medium"
               >Quantidade de funcionários</span
             >
             <input
               type="text"
-              class="pt-6 pb-3 px-4 w-[570px] rounded-md"
+              class="pt-6 pb-3 px-4 w-full max-w-[570px] rounded-md"
               placeholder="Quantas pessoas trabalham com você"
             />
           </label>
-          <label class="relative" for="">
+          <label class="relative w-full" for="">
             <span class="absolute py-2 px-4 text-xs text-gray-400 font-medium"
               >Escreva-nos uma mensagem</span
             >
             <textarea
               type="text"
-              class="pt-6 pb-3 px-4 w-[570px] rounded-md"
+              class="pt-6 pb-3 px-4 w-full max-w-[570px] rounded-md"
               placeholder="Faça alguma observação ou deixe uma mensagem para nós"
             />
           </label>
